@@ -1,0 +1,434 @@
+<html>
+<head>
+<title>TestNG:  AmazonE2EProjectTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>AmazonE2EProjectTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>8/1/2</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Nov 23 16:50:11 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>239 seconds (239836 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='project1.AmazonE2EProject.TestCase9_AddProductToCart.AddProductToCart()'><b>AddProductToCart</b><br>Test class: project1.AmazonE2EProject.TestCase9_AddProductToCart</td>
+<td><div><pre>org.opentest4j.AssertionFailedError: Locator expected to be visible
+Call log:
+  - Assert &quot;isVisible&quot; with timeout 5000ms
+  - waiting for locator(&quot;span[class=&apos;a-size-medium a-text-bold&apos;]&quot;).getByText(&quot; Added to cart &quot;)
+    9 × locator resolved to &lt;span class=&quot;a-size-medium a-text-bold&quot;&gt; Added to cart &lt;/span&gt;
+      - unexpected value &quot;hidden&quot;
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:76)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:47)
+	at com.microsoft.playwright.impl.LocatorAssertionsImpl.expectTrue(LocatorAssertionsImpl.java:471)
+	at com.microsoft.playwright.impl.LocatorAssertionsImpl.isVisible(LocatorAssertionsImpl.java:466)
+	at com.microsoft.playwright.assertions.LocatorAssertions.isVisible(LocatorAssertions.java:860)
+	at project1.AmazonE2EProject.ProductPage.verifyProductAddedToCart(ProductPage.java:70)
+	at project1.AmazonE2EProject.TestCase9_AddProductToCart.AddProductToCart(TestCase9_AddProductToCart.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1206946689", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1206946689'><pre>org.opentest4j.AssertionFailedError: Locator expected to be visible
+Call log:
+  - Assert &quot;isVisible&quot; with timeout 5000ms
+  - waiting for locator(&quot;span[class=&apos;a-size-medium a-text-bold&apos;]&quot;).getByText(&quot; Added to cart &quot;)
+    9 × locator resolved to &lt;span class=&quot;a-size-medium a-text-bold&quot;&gt; Added to cart &lt;/span&gt;
+      - unexpected value &quot;hidden&quot;
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:76)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:47)
+	at com.microsoft.playwright.impl.LocatorAssertionsImpl.expectTrue(LocatorAssertionsImpl.java:471)
+	at com.microsoft.playwright.impl.LocatorAssertionsImpl.isVisible(LocatorAssertionsImpl.java:466)
+	at com.microsoft.playwright.assertions.LocatorAssertions.isVisible(LocatorAssertions.java:860)
+	at project1.AmazonE2EProject.ProductPage.verifyProductAddedToCart(ProductPage.java:70)
+	at project1.AmazonE2EProject.TestCase9_AddProductToCart.AddProductToCart(TestCase9_AddProductToCart.java:67)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>31</td>
+<td>project1.AmazonE2EProject.TestCase9_AddProductToCart@5ffead27</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='project1.AmazonE2EProject.TestCase5_SearchingProductsUsingName.searchProductUsingName()'><b>searchProductUsingName</b><br>Test class: project1.AmazonE2EProject.TestCase5_SearchingProductsUsingName<br/>
+<a href="#Output-977522995" onClick='toggleBox("Output-977522995", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-977522995" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-977522995">
+Successfully navigated through Amazon home page.<br/>
+User Successfully logged in Amazon.in.<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>project1.AmazonE2EProject.TestCase5_SearchingProductsUsingName@44ebcd03</td></tr>
+<tr>
+<td title='project1.AmazonE2EProject.TestCase6_SearchingProductWithFilters.SearchingProductWithFilters()'><b>SearchingProductWithFilters</b><br>Test class: project1.AmazonE2EProject.TestCase6_SearchingProductWithFilters</td>
+<td></td>
+<td>15</td>
+<td>project1.AmazonE2EProject.TestCase6_SearchingProductWithFilters@694abbdc</td></tr>
+<tr>
+<td title='project1.AmazonE2EProject.TestCase8_SortProductBasedOnRelevancePriceRatings.SortProductBasedOnRelevancePriceRatings()'><b>SortProductBasedOnRelevancePriceRatings</b><br>Test class: project1.AmazonE2EProject.TestCase8_SortProductBasedOnRelevancePriceRatings</td>
+<td></td>
+<td>16</td>
+<td>project1.AmazonE2EProject.TestCase8_SortProductBasedOnRelevancePriceRatings@4567f35d</td></tr>
+<tr>
+<td title='project1.AmazonE2EProject.TestCase3_LoginToAmazonWithInvalidCredentials.loginWithInvalidCredentials()'><b>loginWithInvalidCredentials</b><br>Test class: project1.AmazonE2EProject.TestCase3_LoginToAmazonWithInvalidCredentials<br/>
+<a href="#Output-630028734" onClick='toggleBox("Output-630028734", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-630028734" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-630028734">
+Your password is incorrect<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>project1.AmazonE2EProject.TestCase3_LoginToAmazonWithInvalidCredentials@5af3afd9</td></tr>
+<tr>
+<td title='project1.AmazonE2EProject.TestCase2_LoginToAmazonWithValidCredentials.loginToWithValidCredentials()'><b>loginToWithValidCredentials</b><br>Test class: project1.AmazonE2EProject.TestCase2_LoginToAmazonWithValidCredentials<br/>
+<a href="#Output-965586344" onClick='toggleBox("Output-965586344", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-965586344" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-965586344">
+Successfully navigated through Amazon home page.<br/>
+User Successfully logged in Amazon.in.<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>project1.AmazonE2EProject.TestCase2_LoginToAmazonWithValidCredentials@661972b0</td></tr>
+<tr>
+<td title='project1.AmazonE2EProject.TestCase7_EnsureProductDisplayPageShowAllNecessaryInformation.EnsureProductDisplayPageShowAllNecessaryInformation()'><b>EnsureProductDisplayPageShowAllNecessaryInformation</b><br>Test class: project1.AmazonE2EProject.TestCase7_EnsureProductDisplayPageShowAllNecessaryInformation</td>
+<td></td>
+<td>16</td>
+<td>project1.AmazonE2EProject.TestCase7_EnsureProductDisplayPageShowAllNecessaryInformation@2e005c4b</td></tr>
+<tr>
+<td title='project1.AmazonE2EProject.TestCase1_NewUserRegistrationSuccessful.newUserRegistartionSuccess()'><b>newUserRegistartionSuccess</b><br>Test class: project1.AmazonE2EProject.TestCase1_NewUserRegistrationSuccessful</td>
+<td></td>
+<td>3</td>
+<td>project1.AmazonE2EProject.TestCase1_NewUserRegistrationSuccessful@6a192cfe</td></tr>
+<tr>
+<td title='project1.AmazonE2EProject.TestCase4_EditUserInformationSuccessfully.editUserInformationSuccessfully()'><b>editUserInformationSuccessfully</b><br>Test class: project1.AmazonE2EProject.TestCase4_EditUserInformationSuccessfully</td>
+<td></td>
+<td>17</td>
+<td>project1.AmazonE2EProject.TestCase4_EditUserInformationSuccessfully@323b36e0</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='project1.AmazonE2EProject.TestCase9_AddProductToCart.AddProductToCart()'><b>AddProductToCart</b><br>Test class: project1.AmazonE2EProject.TestCase9_AddProductToCart</td>
+<td><div><pre>org.opentest4j.AssertionFailedError: Locator expected to be visible
+Call log:
+  - Assert &quot;isVisible&quot; with timeout 5000ms
+  - waiting for locator(&quot;span[class=&apos;a-size-medium a-text-bold&apos;]&quot;).getByText(&quot; Added to cart &quot;)
+    8 × locator resolved to &lt;span class=&quot;a-size-medium a-text-bold&quot;&gt; Added to cart &lt;/span&gt;
+      - unexpected value &quot;hidden&quot;
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:76)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:47)
+	at com.microsoft.playwright.impl.LocatorAssertionsImpl.expectTrue(LocatorAssertionsImpl.java:471)
+	at com.microsoft.playwright.impl.LocatorAssertionsImpl.isVisible(LocatorAssertionsImpl.java:466)
+	at com.microsoft.playwright.assertions.LocatorAssertions.isVisible(LocatorAssertions.java:860)
+	at project1.AmazonE2EProject.ProductPage.verifyProductAddedToCart(ProductPage.java:70)
+	at project1.AmazonE2EProject.TestCase9_AddProductToCart.AddProductToCart(TestCase9_AddProductToCart.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1500697171", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1500697171'><pre>org.opentest4j.AssertionFailedError: Locator expected to be visible
+Call log:
+  - Assert &quot;isVisible&quot; with timeout 5000ms
+  - waiting for locator(&quot;span[class=&apos;a-size-medium a-text-bold&apos;]&quot;).getByText(&quot; Added to cart &quot;)
+    8 × locator resolved to &lt;span class=&quot;a-size-medium a-text-bold&quot;&gt; Added to cart &lt;/span&gt;
+      - unexpected value &quot;hidden&quot;
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:76)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:47)
+	at com.microsoft.playwright.impl.LocatorAssertionsImpl.expectTrue(LocatorAssertionsImpl.java:471)
+	at com.microsoft.playwright.impl.LocatorAssertionsImpl.isVisible(LocatorAssertionsImpl.java:466)
+	at com.microsoft.playwright.assertions.LocatorAssertions.isVisible(LocatorAssertions.java:860)
+	at project1.AmazonE2EProject.ProductPage.verifyProductAddedToCart(ProductPage.java:70)
+	at project1.AmazonE2EProject.TestCase9_AddProductToCart.AddProductToCart(TestCase9_AddProductToCart.java:67)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>23</td>
+<td>project1.AmazonE2EProject.TestCase9_AddProductToCart@5ffead27</td></tr>
+<tr>
+<td title='project1.AmazonE2EProject.TestCase8_SortProductBasedOnRelevancePriceRatings.SortProductBasedOnRelevancePriceRatings()'><b>SortProductBasedOnRelevancePriceRatings</b><br>Test class: project1.AmazonE2EProject.TestCase8_SortProductBasedOnRelevancePriceRatings</td>
+<td><div><pre>com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at _ProgressController.run (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-3025128824520945448\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-3025128824520945448\package\lib\coreBundle.js:18775:44)
+}
+Call log:
+-   - waiting for locator(&quot;#nav-flyout-ya-signin&quot;)
+-     - locator resolved to &lt;div id=&quot;nav-flyout-ya-signin&quot; class=&quot;nav-flyout-content nav-flyout-accessibility&quot;&gt;…&lt;/div&gt;
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-       - waiting 100ms
+-     55 × waiting for element to be visible, enabled and stable
+-        - element is not visible
+-      - retrying click action
+-        - waiting 500ms
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:147)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:136)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:133)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:244)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:173)
+	at com.microsoft.playwright.Locator.click(Locator.java:2837)
+	at project1.AmazonE2EProject.HomePage.clickOnSignin(HomePage.java:36)
+	at project1.AmazonE2EProject.TestCase8_SortProductBasedOnRelevancePriceRatings.SortProductBasedOnRelevancePriceRatings(TestCase8_SortProductBasedOnRelevancePriceRatings.java:25)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at _ProgressController.run (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-3025128824520945448\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-3025128824520945448\package\lib\coreBundle.js:18775:44)
+}
+Call log:
+-   - waiting for locator(&quot;#nav-flyout-ya-signin&quot;)
+-     - locator resolved to &lt;div id=&quot;nav-flyout-ya-signin&quot; class=&quot;nav-flyout-content nav-flyout-accessibility&quot;&gt;…&lt;/div&gt;
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-       - waiting 100ms
+-     55 × waiting for element to be visible, enabled and stable
+-        - element is not visible
+-      - retrying click action
+-        - waiting 500ms
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:273)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:229)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:145)
+	... 33 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace51376124", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace51376124'><pre>com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at _ProgressController.run (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-3025128824520945448\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-3025128824520945448\package\lib\coreBundle.js:18775:44)
+}
+Call log:
+-   - waiting for locator(&quot;#nav-flyout-ya-signin&quot;)
+-     - locator resolved to &lt;div id=&quot;nav-flyout-ya-signin&quot; class=&quot;nav-flyout-content nav-flyout-accessibility&quot;&gt;…&lt;/div&gt;
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-       - waiting 100ms
+-     55 × waiting for element to be visible, enabled and stable
+-        - element is not visible
+-      - retrying click action
+-        - waiting 500ms
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:147)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:136)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:133)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:244)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:173)
+	at com.microsoft.playwright.Locator.click(Locator.java:2837)
+	at project1.AmazonE2EProject.HomePage.clickOnSignin(HomePage.java:36)
+	at project1.AmazonE2EProject.TestCase8_SortProductBasedOnRelevancePriceRatings.SortProductBasedOnRelevancePriceRatings(TestCase8_SortProductBasedOnRelevancePriceRatings.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at _ProgressController.run (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-3025128824520945448\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-3025128824520945448\package\lib\coreBundle.js:18775:44)
+}
+Call log:
+-   - waiting for locator(&quot;#nav-flyout-ya-signin&quot;)
+-     - locator resolved to &lt;div id=&quot;nav-flyout-ya-signin&quot; class=&quot;nav-flyout-content nav-flyout-accessibility&quot;&gt;…&lt;/div&gt;
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-       - waiting 100ms
+-     55 × waiting for element to be visible, enabled and stable
+-        - element is not visible
+-      - retrying click action
+-        - waiting 500ms
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:273)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:229)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:145)
+	... 33 more
+</pre></div></td>
+<td>33</td>
+<td>project1.AmazonE2EProject.TestCase8_SortProductBasedOnRelevancePriceRatings@4567f35d</td></tr>
+</table><p>
+</body>
+</html>

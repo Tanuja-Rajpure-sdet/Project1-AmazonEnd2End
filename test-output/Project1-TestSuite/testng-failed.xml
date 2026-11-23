@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Project1-TestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="AmazonE2EProjectTest(failed)">
+    <parameter name="engine" value="Chrome"/>
+    <classes>
+      <class name="project1.AmazonE2EProject.TestCase9_AddProductToCart">
+        <methods>
+          <include name="AddProductToCart"/>
+          <include name="launch"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- project1.AmazonE2EProject.TestCase9_AddProductToCart -->
+    </classes>
+  </test> <!-- AmazonE2EProjectTest(failed) -->
+</suite> <!-- Failed suite [Project1-TestSuite] -->

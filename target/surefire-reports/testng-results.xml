@@ -1,0 +1,897 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="3" ignored="0" total="12" passed="7" failed="2" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Successfully navigated through Amazon home page.]]>
+    </line>
+    <line>
+      <![CDATA[User Successfully logged in Amazon.in.]]>
+    </line>
+    <line>
+      <![CDATA[Your password is incorrect]]>
+    </line>
+    <line>
+      <![CDATA[Successfully navigated through Amazon home page.]]>
+    </line>
+    <line>
+      <![CDATA[User Successfully logged in Amazon.in.]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2026-11-23T15:51:10 IST" name="Project1-TestSuite" finished-at="2026-11-23T15:56:24 IST" duration-ms="314676">
+    <groups>
+    </groups>
+    <test started-at="2026-11-23T15:51:10 IST" name="AmazonE2EProjectTest" finished-at="2026-11-23T15:56:24 IST" duration-ms="314676">
+      <class name="project1.AmazonE2EProject.TestCase9_AddProductToCart">
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:project1.AmazonE2EProject.TestCase9_AddProductToCart@6e0dec4a]" started-at="2026-11-23T15:55:17 IST" name="launch" finished-at="2026-11-23T15:55:19 IST" duration-ms="1578" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method retried="true" signature="AddProductToCart()[pri:0, instance:project1.AmazonE2EProject.TestCase9_AddProductToCart@6e0dec4a]" started-at="2026-11-23T15:55:19 IST" name="AddProductToCart" finished-at="2026-11-23T15:55:51 IST" duration-ms="32525" status="SKIP">
+          <exception class="com.microsoft.playwright.TimeoutError">
+            <message>
+              <![CDATA[Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at _ProgressController.run (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-6619155928818722343\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-6619155928818722343\package\lib\coreBundle.js:18775:44)
+}
+Call log:
+-   - waiting for locator("#nav-flyout-ya-signin")
+-     - locator resolved to <div id="nav-flyout-ya-signin" class="nav-flyout-content nav-flyout-accessibility">…</div>
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-       - waiting 100ms
+-     54 × waiting for element to be visible, enabled and stable
+-        - element is not visible
+-      - retrying click action
+-        - waiting 500ms
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at _ProgressController.run (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-6619155928818722343\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-6619155928818722343\package\lib\coreBundle.js:18775:44)
+}
+Call log:
+-   - waiting for locator("#nav-flyout-ya-signin")
+-     - locator resolved to <div id="nav-flyout-ya-signin" class="nav-flyout-content nav-flyout-accessibility">…</div>
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-       - waiting 100ms
+-     54 × waiting for element to be visible, enabled and stable
+-        - element is not visible
+-      - retrying click action
+-        - waiting 500ms
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:147)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:136)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:133)
+at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:244)
+at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:173)
+at com.microsoft.playwright.Locator.click(Locator.java:2837)
+at project1.AmazonE2EProject.HomePage.clickOnSignin(HomePage.java:36)
+at project1.AmazonE2EProject.TestCase9_AddProductToCart.AddProductToCart(TestCase9_AddProductToCart.java:25)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at _ProgressController.run (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-6619155928818722343\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-6619155928818722343\package\lib\coreBundle.js:18775:44)
+}
+Call log:
+-   - waiting for locator("#nav-flyout-ya-signin")
+-     - locator resolved to <div id="nav-flyout-ya-signin" class="nav-flyout-content nav-flyout-accessibility">…</div>
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-       - waiting 100ms
+-     54 × waiting for element to be visible, enabled and stable
+-        - element is not visible
+-      - retrying click action
+-        - waiting 500ms
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:273)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:229)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:145)
+... 37 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddProductToCart -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:project1.AmazonE2EProject.TestCase9_AddProductToCart@6e0dec4a]" started-at="2026-11-23T15:55:51 IST" name="quit" finished-at="2026-11-23T15:55:52 IST" duration-ms="524" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:project1.AmazonE2EProject.TestCase9_AddProductToCart@6e0dec4a]" started-at="2026-11-23T15:55:52 IST" name="launch" finished-at="2026-11-23T15:55:54 IST" duration-ms="2653" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="AddProductToCart()[pri:0, instance:project1.AmazonE2EProject.TestCase9_AddProductToCart@6e0dec4a]" started-at="2026-11-23T15:55:54 IST" name="AddProductToCart" finished-at="2026-11-23T15:56:21 IST" duration-ms="26181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddProductToCart -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:project1.AmazonE2EProject.TestCase9_AddProductToCart@6e0dec4a]" started-at="2026-11-23T15:56:23 IST" name="quit" finished-at="2026-11-23T15:56:24 IST" duration-ms="1097" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- project1.AmazonE2EProject.TestCase9_AddProductToCart -->
+      <class name="project1.AmazonE2EProject.TestCase4_EditUserInformationSuccessfully">
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:project1.AmazonE2EProject.TestCase4_EditUserInformationSuccessfully@778d1062]" started-at="2026-11-23T15:51:42 IST" name="launch" finished-at="2026-11-23T15:51:44 IST" duration-ms="2867" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method retried="true" signature="editUserInformationSuccessfully()[pri:0, instance:project1.AmazonE2EProject.TestCase4_EditUserInformationSuccessfully@778d1062]" started-at="2026-11-23T15:51:44 IST" name="editUserInformationSuccessfully" finished-at="2026-11-23T15:52:18 IST" duration-ms="33167" status="SKIP">
+          <exception class="com.microsoft.playwright.TimeoutError">
+            <message>
+              <![CDATA[Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at _ProgressController.run (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-6619155928818722343\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-6619155928818722343\package\lib\coreBundle.js:18775:44)
+}
+Call log:
+-   - waiting for locator("#nav-flyout-ya-signin")
+-     - locator resolved to <div id="nav-flyout-ya-signin" class="nav-flyout-content nav-flyout-accessibility">…</div>
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-       - waiting 100ms
+-     54 × waiting for element to be visible, enabled and stable
+-        - element is not visible
+-      - retrying click action
+-        - waiting 500ms
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at _ProgressController.run (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-6619155928818722343\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-6619155928818722343\package\lib\coreBundle.js:18775:44)
+}
+Call log:
+-   - waiting for locator("#nav-flyout-ya-signin")
+-     - locator resolved to <div id="nav-flyout-ya-signin" class="nav-flyout-content nav-flyout-accessibility">…</div>
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-       - waiting 100ms
+-     54 × waiting for element to be visible, enabled and stable
+-        - element is not visible
+-      - retrying click action
+-        - waiting 500ms
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:147)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:136)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:133)
+at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:244)
+at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:173)
+at com.microsoft.playwright.Locator.click(Locator.java:2837)
+at project1.AmazonE2EProject.HomePage.clickOnSignin(HomePage.java:36)
+at project1.AmazonE2EProject.TestCase4_EditUserInformationSuccessfully.editUserInformationSuccessfully(TestCase4_EditUserInformationSuccessfully.java:21)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at _ProgressController.run (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-6619155928818722343\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-6619155928818722343\package\lib\coreBundle.js:18775:44)
+}
+Call log:
+-   - waiting for locator("#nav-flyout-ya-signin")
+-     - locator resolved to <div id="nav-flyout-ya-signin" class="nav-flyout-content nav-flyout-accessibility">…</div>
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-       - waiting 100ms
+-     54 × waiting for element to be visible, enabled and stable
+-        - element is not visible
+-      - retrying click action
+-        - waiting 500ms
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:273)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:229)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:145)
+... 37 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editUserInformationSuccessfully -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:project1.AmazonE2EProject.TestCase4_EditUserInformationSuccessfully@778d1062]" started-at="2026-11-23T15:52:18 IST" name="quit" finished-at="2026-11-23T15:52:18 IST" duration-ms="525" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:project1.AmazonE2EProject.TestCase4_EditUserInformationSuccessfully@778d1062]" started-at="2026-11-23T15:52:18 IST" name="launch" finished-at="2026-11-23T15:52:20 IST" duration-ms="1644" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="editUserInformationSuccessfully()[pri:0, instance:project1.AmazonE2EProject.TestCase4_EditUserInformationSuccessfully@778d1062]" started-at="2026-11-23T15:52:20 IST" name="editUserInformationSuccessfully" finished-at="2026-11-23T15:53:04 IST" duration-ms="44588" status="FAIL">
+          <exception class="com.microsoft.playwright.TimeoutError">
+            <message>
+              <![CDATA[Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at _ProgressController.run (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-6619155928818722343\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-6619155928818722343\package\lib\coreBundle.js:18775:44)
+}
+Call log:
+-   - waiting for locator("//span[text()='Login and security']")
+-     - locator resolved to <span class="aui-primitive __SAR00pN6j __SARCETZnk __SARKyLzNyyuZ __SARKyLN01yuZ __dChsbGMXsw4B">Login and security</span>
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-       - waiting 100ms
+-     56 × waiting for element to be visible, enabled and stable
+-        - element is not visible
+-      - retrying click action
+-        - waiting 500ms
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at _ProgressController.run (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-6619155928818722343\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-6619155928818722343\package\lib\coreBundle.js:18775:44)
+}
+Call log:
+-   - waiting for locator("//span[text()='Login and security']")
+-     - locator resolved to <span class="aui-primitive __SAR00pN6j __SARCETZnk __SARKyLzNyyuZ __SARKyLN01yuZ __dChsbGMXsw4B">Login and security</span>
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-       - waiting 100ms
+-     56 × waiting for element to be visible, enabled and stable
+-        - element is not visible
+-      - retrying click action
+-        - waiting 500ms
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:147)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:136)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:133)
+at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:244)
+at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:173)
+at com.microsoft.playwright.Locator.click(Locator.java:2837)
+at project1.AmazonE2EProject.YourAccountPage.clickOnLoginAndSecurity(YourAccountPage.java:38)
+at project1.AmazonE2EProject.TestCase4_EditUserInformationSuccessfully.editUserInformationSuccessfully(TestCase4_EditUserInformationSuccessfully.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:280)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at _ProgressController.run (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-6619155928818722343\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-6619155928818722343\package\lib\coreBundle.js:18775:44)
+}
+Call log:
+-   - waiting for locator("//span[text()='Login and security']")
+-     - locator resolved to <span class="aui-primitive __SAR00pN6j __SARCETZnk __SARKyLzNyyuZ __SARKyLN01yuZ __dChsbGMXsw4B">Login and security</span>
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-       - waiting 100ms
+-     56 × waiting for element to be visible, enabled and stable
+-        - element is not visible
+-      - retrying click action
+-        - waiting 500ms
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:273)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:229)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:145)
+... 37 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editUserInformationSuccessfully -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:project1.AmazonE2EProject.TestCase4_EditUserInformationSuccessfully@778d1062]" started-at="2026-11-23T15:53:05 IST" name="quit" finished-at="2026-11-23T15:53:07 IST" duration-ms="2229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- project1.AmazonE2EProject.TestCase4_EditUserInformationSuccessfully -->
+      <class name="project1.AmazonE2EProject.TestCase8_SortProductBasedOnRelevancePriceRatings">
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:project1.AmazonE2EProject.TestCase8_SortProductBasedOnRelevancePriceRatings@56528192]" started-at="2026-11-23T15:54:06 IST" name="launch" finished-at="2026-11-23T15:54:07 IST" duration-ms="1823" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method retried="true" signature="SortProductBasedOnRelevancePriceRatings()[pri:0, instance:project1.AmazonE2EProject.TestCase8_SortProductBasedOnRelevancePriceRatings@56528192]" started-at="2026-11-23T15:54:07 IST" name="SortProductBasedOnRelevancePriceRatings" finished-at="2026-11-23T15:54:41 IST" duration-ms="33885" status="SKIP">
+          <exception class="com.microsoft.playwright.TimeoutError">
+            <message>
+              <![CDATA[Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at _ProgressController.run (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-6619155928818722343\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-6619155928818722343\package\lib\coreBundle.js:18775:44)
+}
+Call log:
+-   - waiting for locator("#nav-flyout-ya-signin")
+-     - locator resolved to <div id="nav-flyout-ya-signin" class="nav-flyout-content nav-flyout-accessibility">…</div>
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-       - waiting 100ms
+-     55 × waiting for element to be visible, enabled and stable
+-        - element is not visible
+-      - retrying click action
+-        - waiting 500ms
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at _ProgressController.run (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-6619155928818722343\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-6619155928818722343\package\lib\coreBundle.js:18775:44)
+}
+Call log:
+-   - waiting for locator("#nav-flyout-ya-signin")
+-     - locator resolved to <div id="nav-flyout-ya-signin" class="nav-flyout-content nav-flyout-accessibility">…</div>
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-       - waiting 100ms
+-     55 × waiting for element to be visible, enabled and stable
+-        - element is not visible
+-      - retrying click action
+-        - waiting 500ms
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:147)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:136)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:133)
+at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:244)
+at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:173)
+at com.microsoft.playwright.Locator.click(Locator.java:2837)
+at project1.AmazonE2EProject.HomePage.clickOnSignin(HomePage.java:36)
+at project1.AmazonE2EProject.TestCase8_SortProductBasedOnRelevancePriceRatings.SortProductBasedOnRelevancePriceRatings(TestCase8_SortProductBasedOnRelevancePriceRatings.java:25)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at _ProgressController.run (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-6619155928818722343\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-6619155928818722343\package\lib\coreBundle.js:18775:44)
+}
+Call log:
+-   - waiting for locator("#nav-flyout-ya-signin")
+-     - locator resolved to <div id="nav-flyout-ya-signin" class="nav-flyout-content nav-flyout-accessibility">…</div>
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-       - waiting 100ms
+-     55 × waiting for element to be visible, enabled and stable
+-        - element is not visible
+-      - retrying click action
+-        - waiting 500ms
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:273)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:229)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:145)
+... 37 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SortProductBasedOnRelevancePriceRatings -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:project1.AmazonE2EProject.TestCase8_SortProductBasedOnRelevancePriceRatings@56528192]" started-at="2026-11-23T15:54:41 IST" name="quit" finished-at="2026-11-23T15:54:42 IST" duration-ms="509" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:project1.AmazonE2EProject.TestCase8_SortProductBasedOnRelevancePriceRatings@56528192]" started-at="2026-11-23T15:54:42 IST" name="launch" finished-at="2026-11-23T15:54:44 IST" duration-ms="1941" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="SortProductBasedOnRelevancePriceRatings()[pri:0, instance:project1.AmazonE2EProject.TestCase8_SortProductBasedOnRelevancePriceRatings@56528192]" started-at="2026-11-23T15:54:44 IST" name="SortProductBasedOnRelevancePriceRatings" finished-at="2026-11-23T15:55:16 IST" duration-ms="32289" status="FAIL">
+          <exception class="com.microsoft.playwright.TimeoutError">
+            <message>
+              <![CDATA[Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at _ProgressController.run (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-6619155928818722343\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-6619155928818722343\package\lib\coreBundle.js:18775:44)
+}
+Call log:
+-   - waiting for locator("#nav-flyout-ya-signin")
+-     - locator resolved to <div id="nav-flyout-ya-signin" class="nav-flyout-content nav-flyout-accessibility">…</div>
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-       - waiting 100ms
+-     54 × waiting for element to be visible, enabled and stable
+-        - element is not visible
+-      - retrying click action
+-        - waiting 500ms
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at _ProgressController.run (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-6619155928818722343\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-6619155928818722343\package\lib\coreBundle.js:18775:44)
+}
+Call log:
+-   - waiting for locator("#nav-flyout-ya-signin")
+-     - locator resolved to <div id="nav-flyout-ya-signin" class="nav-flyout-content nav-flyout-accessibility">…</div>
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-       - waiting 100ms
+-     54 × waiting for element to be visible, enabled and stable
+-        - element is not visible
+-      - retrying click action
+-        - waiting 500ms
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:147)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:136)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:133)
+at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:244)
+at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:173)
+at com.microsoft.playwright.Locator.click(Locator.java:2837)
+at project1.AmazonE2EProject.HomePage.clickOnSignin(HomePage.java:36)
+at project1.AmazonE2EProject.TestCase8_SortProductBasedOnRelevancePriceRatings.SortProductBasedOnRelevancePriceRatings(TestCase8_SortProductBasedOnRelevancePriceRatings.java:25)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:280)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at _ProgressController.run (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-6619155928818722343\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-6619155928818722343\package\lib\coreBundle.js:18775:44)
+}
+Call log:
+-   - waiting for locator("#nav-flyout-ya-signin")
+-     - locator resolved to <div id="nav-flyout-ya-signin" class="nav-flyout-content nav-flyout-accessibility">…</div>
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-       - waiting 100ms
+-     54 × waiting for element to be visible, enabled and stable
+-        - element is not visible
+-      - retrying click action
+-        - waiting 500ms
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:273)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:229)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:145)
+... 37 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SortProductBasedOnRelevancePriceRatings -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:project1.AmazonE2EProject.TestCase8_SortProductBasedOnRelevancePriceRatings@56528192]" started-at="2026-11-23T15:55:16 IST" name="quit" finished-at="2026-11-23T15:55:17 IST" duration-ms="609" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- project1.AmazonE2EProject.TestCase8_SortProductBasedOnRelevancePriceRatings -->
+      <class name="project1.AmazonE2EProject.TestCase6_SearchingProductWithFilters">
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:project1.AmazonE2EProject.TestCase6_SearchingProductWithFilters@1f0f1111]" started-at="2026-11-23T15:53:25 IST" name="launch" finished-at="2026-11-23T15:53:28 IST" duration-ms="3485" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="SearchingProductWithFilters()[pri:0, instance:project1.AmazonE2EProject.TestCase6_SearchingProductWithFilters@1f0f1111]" started-at="2026-11-23T15:53:28 IST" name="SearchingProductWithFilters" finished-at="2026-11-23T15:53:42 IST" duration-ms="13916" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchingProductWithFilters -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:project1.AmazonE2EProject.TestCase6_SearchingProductWithFilters@1f0f1111]" started-at="2026-11-23T15:53:44 IST" name="quit" finished-at="2026-11-23T15:53:45 IST" duration-ms="1112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- project1.AmazonE2EProject.TestCase6_SearchingProductWithFilters -->
+      <class name="project1.AmazonE2EProject.TestCase3_LoginToAmazonWithInvalidCredentials">
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:project1.AmazonE2EProject.TestCase3_LoginToAmazonWithInvalidCredentials@2b6faea6]" started-at="2026-11-23T15:51:32 IST" name="launch" finished-at="2026-11-23T15:51:34 IST" duration-ms="1488" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="loginWithInvalidCredentials()[pri:0, instance:project1.AmazonE2EProject.TestCase3_LoginToAmazonWithInvalidCredentials@2b6faea6]" started-at="2026-11-23T15:51:34 IST" name="loginWithInvalidCredentials" finished-at="2026-11-23T15:51:40 IST" duration-ms="6709" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Your password is incorrect]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidCredentials -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:project1.AmazonE2EProject.TestCase3_LoginToAmazonWithInvalidCredentials@2b6faea6]" started-at="2026-11-23T15:51:41 IST" name="quit" finished-at="2026-11-23T15:51:42 IST" duration-ms="1010" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- project1.AmazonE2EProject.TestCase3_LoginToAmazonWithInvalidCredentials -->
+      <class name="project1.AmazonE2EProject.TestCase1_NewUserRegistrationSuccessful">
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:project1.AmazonE2EProject.TestCase1_NewUserRegistrationSuccessful@2f177a4b]" started-at="2026-11-23T15:51:10 IST" name="launch" finished-at="2026-11-23T15:51:14 IST" duration-ms="4672" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="newUserRegistartionSuccess()[pri:0, instance:project1.AmazonE2EProject.TestCase1_NewUserRegistrationSuccessful@2f177a4b]" started-at="2026-11-23T15:51:14 IST" name="newUserRegistartionSuccess" finished-at="2026-11-23T15:51:21 IST" duration-ms="6070" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newUserRegistartionSuccess -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:project1.AmazonE2EProject.TestCase1_NewUserRegistrationSuccessful@2f177a4b]" started-at="2026-11-23T15:51:21 IST" name="quit" finished-at="2026-11-23T15:51:22 IST" duration-ms="592" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- project1.AmazonE2EProject.TestCase1_NewUserRegistrationSuccessful -->
+      <class name="project1.AmazonE2EProject.TestCase5_SearchingProductsUsingName">
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:project1.AmazonE2EProject.TestCase5_SearchingProductsUsingName@670002]" started-at="2026-11-23T15:53:07 IST" name="launch" finished-at="2026-11-23T15:53:10 IST" duration-ms="3565" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="searchProductUsingName()[pri:0, instance:project1.AmazonE2EProject.TestCase5_SearchingProductsUsingName@670002]" started-at="2026-11-23T15:53:10 IST" name="searchProductUsingName" finished-at="2026-11-23T15:53:22 IST" duration-ms="11947" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Successfully navigated through Amazon home page.]]>
+            </line>
+            <line>
+              <![CDATA[User Successfully logged in Amazon.in.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- searchProductUsingName -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:project1.AmazonE2EProject.TestCase5_SearchingProductsUsingName@670002]" started-at="2026-11-23T15:53:24 IST" name="quit" finished-at="2026-11-23T15:53:25 IST" duration-ms="1216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- project1.AmazonE2EProject.TestCase5_SearchingProductsUsingName -->
+      <class name="project1.AmazonE2EProject.TestCase7_EnsureProductDisplayPageShowAllNecessaryInformation">
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:project1.AmazonE2EProject.TestCase7_EnsureProductDisplayPageShowAllNecessaryInformation@49c386c8]" started-at="2026-11-23T15:53:45 IST" name="launch" finished-at="2026-11-23T15:53:49 IST" duration-ms="4531" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="EnsureProductDisplayPageShowAllNecessaryInformation()[pri:0, instance:project1.AmazonE2EProject.TestCase7_EnsureProductDisplayPageShowAllNecessaryInformation@49c386c8]" started-at="2026-11-23T15:53:49 IST" name="EnsureProductDisplayPageShowAllNecessaryInformation" finished-at="2026-11-23T15:54:04 IST" duration-ms="14469" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnsureProductDisplayPageShowAllNecessaryInformation -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:project1.AmazonE2EProject.TestCase7_EnsureProductDisplayPageShowAllNecessaryInformation@49c386c8]" started-at="2026-11-23T15:54:05 IST" name="quit" finished-at="2026-11-23T15:54:06 IST" duration-ms="1020" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- project1.AmazonE2EProject.TestCase7_EnsureProductDisplayPageShowAllNecessaryInformation -->
+      <class name="project1.AmazonE2EProject.TestCase2_LoginToAmazonWithValidCredentials">
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:project1.AmazonE2EProject.TestCase2_LoginToAmazonWithValidCredentials@1e802ef9]" started-at="2026-11-23T15:51:22 IST" name="launch" finished-at="2026-11-23T15:51:23 IST" duration-ms="1646" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="loginToWithValidCredentials()[pri:0, instance:project1.AmazonE2EProject.TestCase2_LoginToAmazonWithValidCredentials@1e802ef9]" started-at="2026-11-23T15:51:23 IST" name="loginToWithValidCredentials" finished-at="2026-11-23T15:51:31 IST" duration-ms="7574" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Successfully navigated through Amazon home page.]]>
+            </line>
+            <line>
+              <![CDATA[User Successfully logged in Amazon.in.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginToWithValidCredentials -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:project1.AmazonE2EProject.TestCase2_LoginToAmazonWithValidCredentials@1e802ef9]" started-at="2026-11-23T15:51:31 IST" name="quit" finished-at="2026-11-23T15:51:32 IST" duration-ms="1381" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- project1.AmazonE2EProject.TestCase2_LoginToAmazonWithValidCredentials -->
+    </test> <!-- AmazonE2EProjectTest -->
+  </suite> <!-- Project1-TestSuite -->
+</testng-results>
