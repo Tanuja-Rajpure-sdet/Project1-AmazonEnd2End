@@ -8,8 +8,6 @@ import org.testng.annotations.Test;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.AriaRole;
-
-import io.github.cdimascio.dotenv.Dotenv;
 import utility.BaseTest;
 import utility.ListenersLogic;
 import utility.RetryLogic;
@@ -27,10 +25,10 @@ public class TestCase8_SortProductBasedOnRelevancePriceRatings extends BaseTest
 		assertThat(page).hasTitle("Sign in");
 		
 		LoginPage LoginPage = new LoginPage(page);
-		Dotenv env = Dotenv.load();
-		LoginPage.enterUsername(env.get("Amazon_un"));
+		
+		LoginPage.enterUsername(getEnvValue("Amazon_un"));
 		LoginPage.clickOnContinue();
-		LoginPage.enterPassword(env.get("Amazon_pwd"));
+		LoginPage.enterPassword(getEnvValue("Amazon_pwd"));
 		LoginPage.clickOnSignin();
 		assertThat(page).hasTitle("Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in");
 		
@@ -56,13 +54,6 @@ public class TestCase8_SortProductBasedOnRelevancePriceRatings extends BaseTest
 		SearchPage.clickOnSearchNextPage();
 		page.waitForTimeout(3000);
 		
-		
-		/*
-		 * SearchPage.selectFirstTablet(); page.waitForTimeout(3000); Locator price =
-		 * page.locator("#apex-pricetopay-accessibility-label");
-		 * assertThat(price).isVisible();
-		 * 
-		 */
 	}
 	
 

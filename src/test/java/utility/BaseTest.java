@@ -21,18 +21,39 @@ public class BaseTest extends ListenersLogic{
 		if(nameOfSearchEngine.equals("Chrome"))
 		{playwright = Playwright.create();
 		browser    = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
-		//browsercontext = browser.newContext();
 		browsercontext= browser.newContext(new NewContextOptions().setRecordVideoDir
 				(Paths.get("C:\\Users\\Anna Rajpure\\eclipse-workspace\\AmazonE2EProject\\test-output"
 						+ "\\Video\\Video"+ dateFormat)));
 		
 		page    	= browsercontext.newPage();
 		}
-		//page.navigate(ConfigReader.get("Amazon_url"));// url is sensitive info so get it from .env file through ConfigReaderClass
-		Dotenv env= Dotenv.load();
-		String URL= env.get("Amazon_url");
+		
+		String URL= getEnvValue("Amazon_url");
 		page.navigate(URL);
+		
 	}
+		//page.navigate(ConfigReader.get("Amazon_url"));// url is sensitive info so get it from .env file through ConfigReaderClass
+		/*
+		 * Dotenv env= Dotenv.load(); String URL= env.get("Amazon_url");
+		 * page.navigate(URL);
+		 */
+		//CHanging code as on jenkins its unable to find .env
+		
+		public String getEnvValue(String key) 
+		{
+			Dotenv env = Dotenv.configure().ignoreIfMissing().load();
+			
+			String value = System.getenv(key);
+			if(value==null || value.isBlank())
+			{
+				value = env.get(key);
+			}
+			if (value==null || value.isBlank())
+			{
+				throw new RuntimeException("Environment variable not found: " + key);
+			}
+			return value;
+		}
 	
 	@AfterMethod
 	public void quit() 

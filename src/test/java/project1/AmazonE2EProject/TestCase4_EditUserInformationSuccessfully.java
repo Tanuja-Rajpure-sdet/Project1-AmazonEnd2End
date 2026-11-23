@@ -4,8 +4,6 @@ import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertTha
 
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
-import io.github.cdimascio.dotenv.Dotenv;
 import utility.BaseTest;
 import utility.ListenersLogic;
 import utility.RetryLogic;
@@ -22,10 +20,10 @@ public class TestCase4_EditUserInformationSuccessfully extends BaseTest
 		assertThat(page).hasTitle("Sign in");
 		
 		LoginPage LoginPage = new LoginPage(page);
-		Dotenv env = Dotenv.load();
-		LoginPage.enterUsername(env.get("Amazon_un"));
+		//Dotenv env = Dotenv.load();
+		LoginPage.enterUsername(getEnvValue("Amazon_un"));
 		LoginPage.clickOnContinue();
-		LoginPage.enterPassword(env.get("Amazon_pwd"));
+		LoginPage.enterPassword(getEnvValue("Amazon_pwd"));
 		LoginPage.clickOnSignin();
 		assertThat(page).hasTitle("Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in");
 		page.waitForLoadState();
@@ -34,6 +32,7 @@ public class TestCase4_EditUserInformationSuccessfully extends BaseTest
 		assertThat(page).hasTitle("Your Account");
 		
 		YourAccountPage AccountPage = new YourAccountPage(page);
+		
 		AccountPage.clickOnAccountSettingsDropDown();
 		AccountPage.clickOnLoginAndSecurity();
 		page.waitForLoadState();
@@ -42,32 +41,7 @@ public class TestCase4_EditUserInformationSuccessfully extends BaseTest
 		//LoginPage.clickOnSignin();
 		LoginPage.enterOTP("123456");
 		//LoginPage.clickOnSubmitCode();
-		
-		
-		
-		/*
-		 * AccountPage.clickOnsubmitCode();
-		 * assertThat(page).hasTitle("Amazon Change Name, E-mail, Password");
-		 * AccountPage.clickOnEditEmailbutton(); Locator editname =
-		 * page.locator("#ap_cnep_header");
-		 * assertThat(editname).hasText("Change Your Name");
-		 * AccountPage.newName.fill("Tanuja");
-		 */
-		/*
-		 * AccountPage.clickOnNewName(); page.keyboard().press("Control+A");
-		 * page.keyboard().press("Backspace"); page.keyboard().type("Tanuja");
-		 */
-		/*
-		 * AccountPage.clickOnSaveChanges(); Locator namesaved =
-		 * page.getByText("Name updated.");
-		 * assertThat(namesaved).hasText("Name updated.");
-		 * Reporter.log("Name updated successfully.");
-		 */
-		
-		
-		
-		
-		
+			
 }
 
 }

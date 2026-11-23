@@ -11,8 +11,6 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.testng.Reporter;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
-import io.github.cdimascio.dotenv.Dotenv;
 import utility.BaseTest;
 import utility.ListenersLogic;
 import utility.RetryLogic;
@@ -27,10 +25,10 @@ public class TestCase5_SearchingProductsUsingName extends BaseTest
 		HomePage.clickOnSignin();
 		Reporter.log("Successfully navigated through Amazon home page.");
 		LoginPage LoginPage = new LoginPage(page);
-		Dotenv env= Dotenv.load();
-		LoginPage.enterUsername(env.get("Amazon_un"));
+		//Dotenv env= Dotenv.load();
+		LoginPage.enterUsername(getEnvValue("Amazon_un"));
 		LoginPage.clickOnContinue();
-		LoginPage.enterPassword(env.get("Amazon_pwd"));
+		LoginPage.enterPassword(getEnvValue("Amazon_pwd"));
 		LoginPage.clickOnSignin();
 		assertThat(page).hasTitle("Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in");
 		Reporter.log("User Successfully logged in Amazon.in.");

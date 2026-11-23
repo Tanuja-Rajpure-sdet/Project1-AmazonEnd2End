@@ -4,6 +4,20 @@
   <test thread-count="5" name="AmazonE2EProjectTest(failed)" verbose="0">
     <parameter name="engine" value="Chrome"/>
     <classes>
+      <class name="project1.AmazonE2EProject.TestCase7_EnsureProductDisplayPageShowAllNecessaryInformation">
+        <methods>
+          <include name="quit"/>
+          <include name="EnsureProductDisplayPageShowAllNecessaryInformation"/>
+          <include name="launch"/>
+        </methods>
+      </class> <!-- project1.AmazonE2EProject.TestCase7_EnsureProductDisplayPageShowAllNecessaryInformation -->
+      <class name="project1.AmazonE2EProject.TestCase9_AddProductToCart">
+        <methods>
+          <include name="AddProductToCart"/>
+          <include name="quit"/>
+          <include name="launch"/>
+        </methods>
+      </class> <!-- project1.AmazonE2EProject.TestCase9_AddProductToCart -->
       <class name="project1.AmazonE2EProject.TestCase4_EditUserInformationSuccessfully">
         <methods>
           <include name="editUserInformationSuccessfully"/>
@@ -11,13 +25,13 @@
           <include name="launch"/>
         </methods>
       </class> <!-- project1.AmazonE2EProject.TestCase4_EditUserInformationSuccessfully -->
-      <class name="project1.AmazonE2EProject.TestCase8_SortProductBasedOnRelevancePriceRatings">
+      <class name="project1.AmazonE2EProject.TestCase2_LoginToAmazonWithValidCredentials">
         <methods>
-          <include name="SortProductBasedOnRelevancePriceRatings"/>
-          <include name="quit"/>
+          <include name="loginToWithValidCredentials"/>
           <include name="launch"/>
+          <include name="quit"/>
         </methods>
-      </class> <!-- project1.AmazonE2EProject.TestCase8_SortProductBasedOnRelevancePriceRatings -->
+      </class> <!-- project1.AmazonE2EProject.TestCase2_LoginToAmazonWithValidCredentials -->
     </classes>
   </test> <!-- AmazonE2EProjectTest(failed) -->
 </suite> <!-- Failed suite [Project1-TestSuite] -->

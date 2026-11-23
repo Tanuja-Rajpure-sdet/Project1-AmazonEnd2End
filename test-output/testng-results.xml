@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Successfully navigated through Amazon home page.]]>
+    </line>
+    <line>
+      <![CDATA[User Successfully logged in Amazon.in.]]>
+    </line>
   </reporter-output>
-  <suite started-at="2026-11-23T16:59:12 IST" name="Default suite" finished-at="2026-11-23T16:59:44 IST" duration-ms="32409">
+  <suite started-at="2026-11-23T18:13:44 IST" name="Default suite" finished-at="2026-11-23T18:14:01 IST" duration-ms="17251">
     <groups>
     </groups>
-    <test started-at="2026-11-23T16:59:12 IST" name="Default test" finished-at="2026-11-23T16:59:44 IST" duration-ms="32409">
-      <class name="project1.AmazonE2EProject.TestCase8_SortProductBasedOnRelevancePriceRatings">
-        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:project1.AmazonE2EProject.TestCase8_SortProductBasedOnRelevancePriceRatings@3d51f06e]" started-at="2026-11-23T16:59:12 IST" name="launch" finished-at="2026-11-23T16:59:19 IST" duration-ms="7367" status="PASS">
+    <test started-at="2026-11-23T18:13:44 IST" name="Default test" finished-at="2026-11-23T18:14:01 IST" duration-ms="17251">
+      <class name="project1.AmazonE2EProject.TestCase2_LoginToAmazonWithValidCredentials">
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:project1.AmazonE2EProject.TestCase2_LoginToAmazonWithValidCredentials@7ed7259e]" started-at="2026-11-23T18:13:44 IST" name="launch" finished-at="2026-11-23T18:13:49 IST" duration-ms="5015" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +24,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method signature="SortProductBasedOnRelevancePriceRatings()[pri:0, instance:project1.AmazonE2EProject.TestCase8_SortProductBasedOnRelevancePriceRatings@3d51f06e]" started-at="2026-11-23T16:59:19 IST" name="SortProductBasedOnRelevancePriceRatings" finished-at="2026-11-23T16:59:40 IST" duration-ms="21265" status="PASS">
+        <test-method signature="loginToWithValidCredentials()[pri:0, instance:project1.AmazonE2EProject.TestCase2_LoginToAmazonWithValidCredentials@7ed7259e]" started-at="2026-11-23T18:13:49 IST" name="loginToWithValidCredentials" finished-at="2026-11-23T18:13:59 IST" duration-ms="10272" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Successfully navigated through Amazon home page.]]>
+            </line>
+            <line>
+              <![CDATA[User Successfully logged in Amazon.in.]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- SortProductBasedOnRelevancePriceRatings -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:project1.AmazonE2EProject.TestCase8_SortProductBasedOnRelevancePriceRatings@3d51f06e]" started-at="2026-11-23T16:59:43 IST" name="quit" finished-at="2026-11-23T16:59:44 IST" duration-ms="840" status="PASS">
+        </test-method> <!-- loginToWithValidCredentials -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:project1.AmazonE2EProject.TestCase2_LoginToAmazonWithValidCredentials@7ed7259e]" started-at="2026-11-23T18:13:59 IST" name="quit" finished-at="2026-11-23T18:14:01 IST" duration-ms="1691" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-      </class> <!-- project1.AmazonE2EProject.TestCase8_SortProductBasedOnRelevancePriceRatings -->
+      </class> <!-- project1.AmazonE2EProject.TestCase2_LoginToAmazonWithValidCredentials -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

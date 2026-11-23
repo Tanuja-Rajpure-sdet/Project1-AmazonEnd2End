@@ -1,19 +1,19 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 12, Failures: 2, Errors: 0, Skipped: 3, Time elapsed: 315.6 s <<< FAILURE! -- in TestSuite
-project1.AmazonE2EProject.TestCase4_EditUserInformationSuccessfully.editUserInformationSuccessfully -- Time elapsed: 44.61 s <<< FAILURE!
+Tests run: 15, Failures: 4, Errors: 0, Skipped: 6, Time elapsed: 463.8 s <<< FAILURE! -- in TestSuite
+project1.AmazonE2EProject.TestCase2_LoginToAmazonWithValidCredentials.loginToWithValidCredentials -- Time elapsed: 31.47 s <<< FAILURE!
 com.microsoft.playwright.TimeoutError: 
 Error {
   message='Timeout 30000ms exceeded.
   name='TimeoutError
   stack='TimeoutError: Timeout 30000ms exceeded.
-    at _ProgressController.run (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-6619155928818722343\package\lib\coreBundle.js:12135:32)
-    at DispatcherConnection.dispatch (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-6619155928818722343\package\lib\coreBundle.js:18775:44)
+    at _ProgressController.run (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-3804826848333482248\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-3804826848333482248\package\lib\coreBundle.js:18775:44)
 }
 Call log:
--   - waiting for locator("//span[text()='Login and security']")
--     - locator resolved to <span class="aui-primitive __SAR00pN6j __SARCETZnk __SARKyLzNyyuZ __SARKyLN01yuZ __dChsbGMXsw4B">Login and security</span>
+-   - waiting for locator("#nav-flyout-ya-signin")
+-     - locator resolved to <div id="nav-flyout-ya-signin" class="nav-flyout-content nav-flyout-accessibility">…</div>
 -   - attempting click action
 -     2 × waiting for element to be visible, enabled and stable
 -       - element is not visible
@@ -23,7 +23,7 @@ Call log:
 -       - element is not visible
 -     - retrying click action
 -       - waiting 100ms
--     56 × waiting for element to be visible, enabled and stable
+-     52 × waiting for element to be visible, enabled and stable
 -        - element is not visible
 -      - retrying click action
 -        - waiting 500ms
@@ -35,8 +35,8 @@ Call log:
 	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:244)
 	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:173)
 	at com.microsoft.playwright.Locator.click(Locator.java:2837)
-	at project1.AmazonE2EProject.YourAccountPage.clickOnLoginAndSecurity(YourAccountPage.java:38)
-	at project1.AmazonE2EProject.TestCase4_EditUserInformationSuccessfully.editUserInformationSuccessfully(TestCase4_EditUserInformationSuccessfully.java:38)
+	at project1.AmazonE2EProject.HomePage.clickOnSignin(HomePage.java:36)
+	at project1.AmazonE2EProject.TestCase2_LoginToAmazonWithValidCredentials.loginToWithValidCredentials(TestCase2_LoginToAmazonWithValidCredentials.java:19)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -71,12 +71,12 @@ Caused by: com.microsoft.playwright.TimeoutError: Error {
   message='Timeout 30000ms exceeded.
   name='TimeoutError
   stack='TimeoutError: Timeout 30000ms exceeded.
-    at _ProgressController.run (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-6619155928818722343\package\lib\coreBundle.js:12135:32)
-    at DispatcherConnection.dispatch (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-6619155928818722343\package\lib\coreBundle.js:18775:44)
+    at _ProgressController.run (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-3804826848333482248\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-3804826848333482248\package\lib\coreBundle.js:18775:44)
 }
 Call log:
--   - waiting for locator("//span[text()='Login and security']")
--     - locator resolved to <span class="aui-primitive __SAR00pN6j __SARCETZnk __SARKyLzNyyuZ __SARKyLN01yuZ __dChsbGMXsw4B">Login and security</span>
+-   - waiting for locator("#nav-flyout-ya-signin")
+-     - locator resolved to <div id="nav-flyout-ya-signin" class="nav-flyout-content nav-flyout-accessibility">…</div>
 -   - attempting click action
 -     2 × waiting for element to be visible, enabled and stable
 -       - element is not visible
@@ -86,7 +86,7 @@ Call log:
 -       - element is not visible
 -     - retrying click action
 -       - waiting 100ms
--     56 × waiting for element to be visible, enabled and stable
+-     52 × waiting for element to be visible, enabled and stable
 -        - element is not visible
 -      - retrying click action
 -        - waiting 500ms
@@ -96,14 +96,14 @@ Call log:
 	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:145)
 	... 37 more
 
-project1.AmazonE2EProject.TestCase8_SortProductBasedOnRelevancePriceRatings.SortProductBasedOnRelevancePriceRatings -- Time elapsed: 32.29 s <<< FAILURE!
+project1.AmazonE2EProject.TestCase4_EditUserInformationSuccessfully.editUserInformationSuccessfully -- Time elapsed: 34.47 s <<< FAILURE!
 com.microsoft.playwright.TimeoutError: 
 Error {
   message='Timeout 30000ms exceeded.
   name='TimeoutError
   stack='TimeoutError: Timeout 30000ms exceeded.
-    at _ProgressController.run (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-6619155928818722343\package\lib\coreBundle.js:12135:32)
-    at DispatcherConnection.dispatch (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-6619155928818722343\package\lib\coreBundle.js:18775:44)
+    at _ProgressController.run (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-3804826848333482248\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-3804826848333482248\package\lib\coreBundle.js:18775:44)
 }
 Call log:
 -   - waiting for locator("#nav-flyout-ya-signin")
@@ -130,7 +130,7 @@ Call log:
 	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:173)
 	at com.microsoft.playwright.Locator.click(Locator.java:2837)
 	at project1.AmazonE2EProject.HomePage.clickOnSignin(HomePage.java:36)
-	at project1.AmazonE2EProject.TestCase8_SortProductBasedOnRelevancePriceRatings.SortProductBasedOnRelevancePriceRatings(TestCase8_SortProductBasedOnRelevancePriceRatings.java:25)
+	at project1.AmazonE2EProject.TestCase4_EditUserInformationSuccessfully.editUserInformationSuccessfully(TestCase4_EditUserInformationSuccessfully.java:19)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -165,8 +165,8 @@ Caused by: com.microsoft.playwright.TimeoutError: Error {
   message='Timeout 30000ms exceeded.
   name='TimeoutError
   stack='TimeoutError: Timeout 30000ms exceeded.
-    at _ProgressController.run (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-6619155928818722343\package\lib\coreBundle.js:12135:32)
-    at DispatcherConnection.dispatch (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-6619155928818722343\package\lib\coreBundle.js:18775:44)
+    at _ProgressController.run (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-3804826848333482248\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-3804826848333482248\package\lib\coreBundle.js:18775:44)
 }
 Call log:
 -   - waiting for locator("#nav-flyout-ya-signin")
@@ -189,4 +189,144 @@ Call log:
 	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:229)
 	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:145)
 	... 37 more
+
+project1.AmazonE2EProject.TestCase7_EnsureProductDisplayPageShowAllNecessaryInformation.EnsureProductDisplayPageShowAllNecessaryInformation -- Time elapsed: 31.82 s <<< FAILURE!
+com.microsoft.playwright.TimeoutError: 
+Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at _ProgressController.run (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-3804826848333482248\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-3804826848333482248\package\lib\coreBundle.js:18775:44)
+}
+Call log:
+-   - waiting for locator("#nav-flyout-ya-signin")
+-     - locator resolved to <div id="nav-flyout-ya-signin" class="nav-flyout-content nav-flyout-accessibility">…</div>
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-       - waiting 100ms
+-     52 × waiting for element to be visible, enabled and stable
+-        - element is not visible
+-      - retrying click action
+-        - waiting 500ms
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:147)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:136)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:133)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:244)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:173)
+	at com.microsoft.playwright.Locator.click(Locator.java:2837)
+	at project1.AmazonE2EProject.HomePage.clickOnSignin(HomePage.java:36)
+	at project1.AmazonE2EProject.TestCase7_EnsureProductDisplayPageShowAllNecessaryInformation.EnsureProductDisplayPageShowAllNecessaryInformation(TestCase7_EnsureProductDisplayPageShowAllNecessaryInformation.java:23)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:280)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at _ProgressController.run (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-3804826848333482248\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\ANNARA~1\AppData\Local\Temp\playwright-java-3804826848333482248\package\lib\coreBundle.js:18775:44)
+}
+Call log:
+-   - waiting for locator("#nav-flyout-ya-signin")
+-     - locator resolved to <div id="nav-flyout-ya-signin" class="nav-flyout-content nav-flyout-accessibility">…</div>
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-       - waiting 100ms
+-     52 × waiting for element to be visible, enabled and stable
+-        - element is not visible
+-      - retrying click action
+-        - waiting 500ms
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:273)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:229)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:145)
+	... 37 more
+
+project1.AmazonE2EProject.TestCase9_AddProductToCart.AddProductToCart -- Time elapsed: 30.00 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+Locator expected to be visible
+Call log:
+  - Assert "isVisible" with timeout 5000ms
+  - waiting for locator("span[class='a-size-medium a-text-bold']").getByText(" Added to cart ")
+    8 × locator resolved to <span class="a-size-medium a-text-bold"> Added to cart </span>
+      - unexpected value "hidden"
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:76)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:47)
+	at com.microsoft.playwright.impl.LocatorAssertionsImpl.expectTrue(LocatorAssertionsImpl.java:471)
+	at com.microsoft.playwright.impl.LocatorAssertionsImpl.isVisible(LocatorAssertionsImpl.java:466)
+	at com.microsoft.playwright.assertions.LocatorAssertions.isVisible(LocatorAssertions.java:860)
+	at project1.AmazonE2EProject.ProductPage.verifyProductAddedToCart(ProductPage.java:70)
+	at project1.AmazonE2EProject.TestCase9_AddProductToCart.AddProductToCart(TestCase9_AddProductToCart.java:65)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:280)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
